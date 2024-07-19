@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lieci Srl</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <img src="logo.jpg" alt="Lieci Srl Logo" class="logo">
+            <h1 class="gold-title">Lieci Srl</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#chi-siamo">Chi Siamo</a></li>
+                <li><a href="#servizi">Servizi</a></li>
+                <li><a href="#fondatore">Fondatore</a></li>
+                <li><a href="#contatti">Contatti</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="chi-siamo">
+        <h2>Chi Siamo</h2>
+        <p>Benvenuti nella nostra azienda! Siamo specializzati in impianti elettrici e fotovoltaici. La nostra missione è fornire soluzioni energetiche sostenibili e di alta qualità.</p>
+    </section>
+
+    <section id="servizi">
+        <h2>Servizi</h2>
+        <h3>Impianti Fotovoltaici</h3>
+        <ul>
+            <li>Installazione di impianti fotovoltaici</li>
+            <li>Manutenzione di impianti solari</li>
+        </ul>
+        <button class="btn" onclick="openForm('fotovoltaico-form')">Richiedi Preventivo</button>
+        <div id="fotovoltaico-form" class="form-popup">
+            <form class="form-container">
+                <h2>Richiedi Preventivo - Fotovoltaico</h2>
+                <label for="nome-fotovoltaico"><b>Nome</b></label>
+                <input type="text" placeholder="Inserisci Nome" id="nome-fotovoltaico" name="nome" required>
+                <label for="email-fotovoltaico"><b>Email</b></label>
+                <input type="email" placeholder="Inserisci Email" id="email-fotovoltaico" name="email" required>
+                <label for="telefono-fotovoltaico"><b>Telefono</b></label>
+                <input type="tel" placeholder="Inserisci Telefono" id="telefono-fotovoltaico" name="telefono" required>
+                <label for="indirizzo-fotovoltaico"><b>Indirizzo</b></label>
+                <input type="text" placeholder="Inserisci Indirizzo" id="indirizzo-fotovoltaico" name="indirizzo" required>
+                <button type="submit" class="btn">Invia</button>
+                <button type="button" class="btn cancel" onclick="closeForm('fotovoltaico-form')">Chiudi</button>
+            </form>
+        </div>
+        <h3>Impianti Elettrici</h3>
+        <ul>
+            <li>Progettazione e installazione di impianti elettrici</li>
+            <li>Consulenza energetica</li>
+        </ul>
+        <button class="btn" onclick="openForm('elettrici-form')">Richiedi Preventivo</button>
+        <div id="elettrici-form" class="form-popup">
+            <form class="form-container">
+                <h2>Richiedi Preventivo - Impianti Elettrici</h2>
+                <label for="nome-elettrici"><b>Nome</b></label>
+                <input type="text" placeholder="Inserisci Nome" id="nome-elettrici" name="nome" required>
+                <label for="email-elettrici"><b>Email</b></label>
+                <input type="email" placeholder="Inserisci Email" id="email-elettrici" name="email" required>
+                <label for="telefono-elettrici"><b>Telefono</b></label>
+                <input type="tel" placeholder="Inserisci Telefono" id="telefono-elettrici" name="telefono" required>
+                <label for="indirizzo-elettrici"><b>Indirizzo</b></label>
+                <input type="text" placeholder="Inserisci Indirizzo" id="indirizzo-elettrici" name="indirizzo" required>
+                <button type="submit" class="btn">Invia</button>
+                <button type="button" class="btn cancel" onclick="closeForm('elettrici-form')">Chiudi</button>
+            </form>
+        </div>
+    </section>
+
+    <section id="foto">
+        <h2>Galleria Fotovoltaico</h2>
+        <div class="gallery">
+            <img src="fotovoltaico1.jpg" alt="Fotovoltaico 1">
+            <img src="fotovoltaico2.jpg" alt="Fotovoltaico 2">
+        </div>
+        <h2>Galleria Impianti Elettrici</h2>
+        <div class="gallery">
+            <img src="elettrico1.jpg" alt="Elettrico 1">
+            <img src="elettrico2.jpg" alt="Elettrico 2">
+        </div>
+    </section>
+
+    <section id="fondatore">
+        <h2>Il Fondatore</h2>
+		<img src="fondatore.jpg" alt="fondatore">
+        <p>Mi chiamo D'Agostino Vincenzo e sono il fondatore di Lieci Srl. Con oltre [X] anni di esperienza nel settore degli impianti elettrici e fotovoltaici, ho dedicato la mia carriera a fornire soluzioni energetiche innovative e sostenibili.</p>
+        <h3>Accademia del Fare</h3>
+        <p>Con la mia seconda azienda, <strong>Accademia del Fare</strong>, offro corsi di crescita personale. Questi corsi sono progettati per aiutare le persone a sviluppare competenze come la gestione delle emozioni, la resilienza, la leadership e la comunicazione efficace.</p>
+    </section>
+
+    <footer>
+        <p>© 2024 Lieci Srl. Tutti i diritti riservati.</p>
+    </footer>
+</body>
+</html>
